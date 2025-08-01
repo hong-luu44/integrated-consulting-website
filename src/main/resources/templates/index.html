@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${companyName} + ' - Professional Website Development'">Integrated Consulting - Professional Website Development</title>
+    <meta name="description" content="Integrated Consulting builds professional websites for businesses across all industries. Expert web development services with modern design.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Integrated Consulting Logo" class="logo-img" style="display: none;">
+                <span class="logo-text" th:text="${companyName}">Integrated Consulting</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Professional Website Development for 
+                    <span class="highlight">All Industries</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Building Professional Websites for All Industries
+                </p>
+                <p class="hero-description">
+                    We create stunning, responsive websites that help businesses thrive online. 
+                    From small startups to large enterprises, we deliver custom solutions tailored to your needs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Modern Design</h3>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive</h3>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast Loading</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive web development solutions for every business need</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Custom Website Development</h3>
+                    <p>Tailored websites built from scratch to match your brand and business requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that look perfect on all devices - desktop, tablet, and mobile.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Full-featured online stores with secure payment processing and inventory management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Search engine optimized websites to help your business get found online.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing website maintenance, updates, and technical support services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed optimization and performance tuning for better user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Expertise across all business sectors</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Business Services</span>
+                </div>
+                <div class="industry-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Healthcare</span>
+                </div>
+                <div class="industry-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </div>
+                <div class="industry-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>Restaurants</span>
+                </div>
+                <div class="industry-item">
+                    <i class="fas fa-home"></i>
+                    <span>Real Estate</span>
+                </div>
+                <div class="industry-item">
+                    <i class="fas fa-church"></i>
+                    <span>Religious Organizations</span>
+                </div>
+                <div class="industry-item">
+                    <i class="fas fa-store"></i>
+                    <span>Retail</span>
+                </div>
+                <div class="industry-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Manufacturing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Work</h2>
+                <p>Recent projects showcasing our expertise</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Church Website</h3>
+                            <p>Modern church website with event management and online sermons</p>
+                            <div class="portfolio-tags">
+                                <span>Responsive</span>
+                                <span>CMS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Store</h3>
+                            <p>Full-featured online store with payment integration</p>
+                            <div class="portfolio-tags">
+                                <span>E-Commerce</span>
+                                <span>Payment Gateway</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Business Portfolio</h3>
+                            <p>Professional corporate website with service showcase</p>
+                            <div class="portfolio-tags">
+                                <span>Corporate</span>
+                                <span>Professional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About <span th:text="${companyName}">Integrated Consulting</span></h2>
+                    <p class="about-intro">
+                        With extensive experience in web development, we've successfully delivered 
+                        websites for businesses across all industries.
+                    </p>
+                    <p>
+                        Our team specializes in creating modern, responsive websites that not only 
+                        look great but also perform excellently. From our work on church websites 
+                        to complex business solutions, we understand the unique needs of different 
+                        organizations.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Websites Built</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Support Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Quality Assured</h3>
+                        <p>Every project meets the highest standards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your project? Let's discuss your needs</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (415) 689-0028</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@integratedconsulting.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Mon - Fri: 9AM - 6PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 th:text="${companyName}">Integrated Consulting</h3>
+                    <p>Building professional websites for businesses across all industries.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Responsive Design</a></li>
+                        <li><a href="#">E-Commerce</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="#">Business Services</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Religious Organizations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +1 (415) 689-0028</p>
+                    <p><i class="fas fa-envelope"></i> info@integratedconsulting.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span th:text="${companyName}">Integrated Consulting</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
