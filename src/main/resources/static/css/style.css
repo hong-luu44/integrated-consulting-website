@@ -244,7 +244,7 @@ body {
 
 .floating-card:nth-child(3) {
     bottom: 50px;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     animation-delay: 4s;
 }
@@ -837,3 +837,5 @@ section {
         padding: 1.5rem;
     }
 }
+
+
