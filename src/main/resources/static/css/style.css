@@ -244,7 +244,7 @@ body {
 
 .floating-card:nth-child(3) {
     bottom: 50px;
-    left: 30%;
+    left: 50%;
     transform: translateX(-50%);
     animation-delay: 4s;
 }
