@@ -126,7 +126,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .hero::before {
@@ -758,6 +758,10 @@ section {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+    }
+
+    .hero {
+        padding-top: 200px; /* Match your mobile navbar height */
     }
 
     .hero-title {
