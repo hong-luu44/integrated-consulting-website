@@ -13,9 +13,7 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.requiresChannel(channel -> channel
-                .anyRequest().requiresSecure()
-        );
+        // No HTTPS enforcement for local development
         return http.build();
     }
 

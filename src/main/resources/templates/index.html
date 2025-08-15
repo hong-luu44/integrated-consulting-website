@@ -378,6 +378,9 @@
         </div>
     </footer>
 
+        <!-- Back to Top Button -->
+        <button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
     <!-- JavaScript -->
     <script th:src="@{/js/main.js}"></script>
         <script>
@@ -389,6 +392,27 @@
                     navMenu.classList.toggle('active');
                     hamburger.classList.toggle('active');
                 });
+
+                    // Close mobile menu when a nav-link is clicked
+                    document.querySelectorAll('.nav-link').forEach(function(link) {
+                        link.addEventListener('click', function() {
+                            navMenu.classList.remove('active');
+                            hamburger.classList.remove('active');
+                        });
+                    });
+
+                    // Back to Top button
+                    const backToTop = document.getElementById('backToTop');
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 300) {
+                            backToTop.classList.add('show');
+                        } else {
+                            backToTop.classList.remove('show');
+                        }
+                    });
+                    backToTop.addEventListener('click', function() {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
             });
         </script>
 </body>
